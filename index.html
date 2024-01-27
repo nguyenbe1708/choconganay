@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cho con gà này</title>
+</head>
+<style>
+    #no {
+         position: absolute;
+         left: 100px;
+         width: 200px;
+         background-color:red;
+         color: yellow;
+         font-size: 20pt;
+    }
+    body{
+        background-color: rgba(255, 0, 0, 0.105);
+    }
+    h1{
+        font-size :30pt ;
+    }
+</style>
+<body>
+
+    <script>
+        var hoveredNo = function () {
+            var btn = document.getElementById("no");
+            var top = Math.floor(Math.random()*500);
+            var left = Math.floor(Math.random()*300);
+
+            btn.style.top = top;
+            btn.style.left = left;
+        }
+        
+    </script>
+    <h1>Nhấn nút dưới đây để nhận con gà</h1>
+    
+    <button id="no" onclick="hoveredNo()">Ấn để nhận con gà free</button>
+</body>
+</html>
+I
